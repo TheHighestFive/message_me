@@ -5,6 +5,9 @@
   flex: 1 0 auto;
   background-color: #302F2F;
 }
+#darktext {
+  color: white;
+}
 
 .chatbox {
   height: 450px;
@@ -12,6 +15,12 @@
 
 .whitext {
   color: white;
+  display: inline-block;
+}
+
+.usertext {
+  color: green;
+  display: inline-block;
 }
 
 .header {

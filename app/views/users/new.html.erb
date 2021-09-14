@@ -1,0 +1,19 @@
+<h1 style="color:white">sign up!</h1>
+
+<div class="ui two column grid container">
+  <div class="twelve wide column">
+    <div class="ui fluid card">
+      <%= form_for(:user, html: {class: "ui inverted segment form", role: "form"}, url: signup_path) do |f| %>
+        <div class="inline fields">
+          <%= f.label :username, "Username", id: "darktext" %>
+          <%= f.text_field :username, placeholder: "Enter a username" %>
+        </div>
+        <div class="inline field">
+          <%= f.label :password, "Password", id: "darktext" %>
+          <%= f.password_field :password, placeholder: "Create a password" %>
+        </div>
+        <%= f.button "Sign up!", class: "ui green submit button" %>
+      <% end %>
+    </div>
+  </div>
+</div>

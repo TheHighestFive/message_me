@@ -12,12 +12,13 @@
           <%= render @messages %>
         </div>
       </div>
+        <div class="ui fitted divider"></div>
       <div class="extra content">
         <%= form_for(@message, html: {class: "ui reply form", role: "form"}, url: message_path, method: "POST", remote: true) do |f| %>
           <div class="field">
             <div class="ui fluid icon input">
               <div class="ui transparent icon input">
-                <%= f.text_field :body %>
+                <%= f.text_field :body, id: "darktext" %>
               </div>
               <%= f.button '<i class="bordered inverted green edit icon"></i>'.html_safe %>
             </div>
